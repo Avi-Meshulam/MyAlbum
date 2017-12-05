@@ -1,26 +1,30 @@
 MyAlbum is an UWP MVVM app for viewing and organizing images. It was built with VS 2015 update 3.
 
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/StartUp.gif "StartUp")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/FilePicker.gif "Pick Files")
 
 ### Featuers:
 + JSON Serialization - Auto save changes in Windows isolated storage.
 + MVVM - Implemented independently, without using any 3rd party library.
 + Binding - using the newer "x:bind".
 + Variable Sized Wrap Grid View (for display of characters in side panel).
-	- Based on [Jerry Nixon's blog post](http://blog.jerrynixon.com/2012/08/windows-8-beauty-tip-using.html)
+	- Inspired by [Jerry Nixon's blog post](http://blog.jerrynixon.com/2012/08/windows-8-beauty-tip-using.html)
 + Back/Forward navigation
 + Windows Location Service
 + Adaptive Display
-+ Data Validations using Data Annotations
-+ Menu Flyouts
++ **Data Validations using Data Annotations**
 + Content dialogs
++ Menu Flyouts
 + Custom message dialog
 + Live Tiles
 + Dark/Light Themes
 		
 ...and many other tricks & goodies :)
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/AdaptiveDisplay.gif "Adaptive Display")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/AdaptiveDisplay.gif "Adaptive Display")
+Adaptive Display
+		
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/StartUp.gif "Live Tiles")
+First Run
 		
 The application consists of 3 projects:
 + **MyAlbum** - GUI Client (UWP application)
@@ -30,47 +34,67 @@ The application consists of 3 projects:
 ### Operations:
 #### 1. Add/Delete album
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/NewAlbum.gif "New Album")
+Add Album
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/DeleteAlbum.gif "Delete Album")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/NewAlbum.gif "New Album")
+		
+Delete Album
+		
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/DeleteAlbum.gif "Delete Album")
 #### 2. Edit album properties (name & "is main?")
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/ChangeMainAlbum.gif "Edit Album")
+Edit Album
+		
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/ChangeMainAlbum.gif "Edit Album")
 - Main album is displayed when the app starts and its name is displayed in bold in "Albums" menu.
 - Current album is identified by a check mark in "Albums" menu.
 #### 3. Add/Delete photos (file picker, drag & drop, camera)
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/DeletePhoto.gif "Delete Photo")
+Drag & Drop
+		
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Drag&Drop.gif "Drag & Drop")
+		
+Delete Photo
+		
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/DeletePhoto.gif "Delete Photo")
 #### 4. Edit photo details in 2 places - directly in photo card or in side panel
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/EditPhotoDetails.gif "Edit Photo Details")
+Edit Photo Details
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/Validation.gif "Validation")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/EditPhotoDetails.gif "Edit Photo Details")
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/Location.gif "Set Location")
+Data Validation
+		
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Validation.gif "Validation")
+		
+Set Location
+		
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Location.gif "Set Location")
 #### 5. Move photos between albums
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/MovePhoto.gif "Move Photo")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/MovePhoto.gif "Move Photo")
 #### 6. Add/Delete characters in photo
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/AddCharacter.gif "Add Character")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/AddCharacter.gif "Add Character")
 #### 7. Toggle between Grid view and Flip view
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/FlipView.gif "Toggle View")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/FlipView.gif "Toggle View")
 #### 8. Toggle between Dark theme and Light theme
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/Theme.gif "Toggle Theme")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Theme.gif "Toggle Theme")
 #### 9. Move Back/Forward
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/MoveBack.gif "Move Back")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/MoveBack.gif "Move Back")
 
 ### Menu
 **Albums** - Navigation between albums or creation of a new one
-- Album 1
-- Album 2
-- Album 3
-- (...)
-- **New Album...**
+- **Main**
+- Album X
+- Album Y
+		
+	(...)
+		
+- New Album...
 		
 **Add Photos...** - Open file picker to add photos to current album
 		
