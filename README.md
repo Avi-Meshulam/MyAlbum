@@ -6,8 +6,8 @@ MyAlbum is an UWP MVVM app for viewing and organizing images. It was built with 
 + JSON Serialization - Auto save changes in Windows isolated storage.
 + MVVM - Implemented independently, without using any 3rd party library.
 + Binding - using the newer "x:bind".
-+ Variable Sized Wrap Grid View* (for displaing names of characters in photo details side panel)
-* Based on [Jerry Nixon's blog post](http://blog.jerrynixon.com/2012/08/windows-8-beauty-tip-using.html)
++ Variable Sized Wrap Grid View (for display of characters in side panel).
+	- Based on [Jerry Nixon's blog post](http://blog.jerrynixon.com/2012/08/windows-8-beauty-tip-using.html)
 + Back/Forward navigation
 + Windows Location Service
 + Adaptive Display
@@ -32,14 +32,16 @@ The application consists of 3 projects:
 		
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/NewAlbum.gif "New Album")
 		
-	![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/DeleteAlbum.gif "Delete Album")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/DeleteAlbum.gif "Delete Album")
 #### 2. Edit album properties (name & "is main?")
 		
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/ChangeMainAlbum.gif "Edit Album")
+- Main album is displayed when the app starts and its name is displayed in bold in "Albums" menu.
+- Current album is identified by a check mark in "Albums" menu.
 #### 3. Add/Delete photos (file picker, drag & drop, camera)
 		
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/DeletePhoto.gif "Delete Photo")
-#### 4. Edit photo details in 2 places - directly in photo card or in the side panel
+#### 4. Edit photo details in 2 places - directly in photo card or in side panel
 		
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/EditPhotoDetails.gif "Edit Photo Details")
 		
@@ -61,10 +63,6 @@ The application consists of 3 projects:
 #### 9. Move Back/Forward
 		
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/MoveBack.gif "Move Back")
-
-> Main album is displayed when the app starts and its name is displayed in bold in "Albums" menu.
-		
-> Current album is identified by a check mark in "Albums" menu.
 
 ### Menu
 **Albums** - Navigation between albums or creation of a new one
