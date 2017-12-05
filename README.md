@@ -20,11 +20,13 @@ MyAlbum is an UWP MVVM app for viewing and organizing images. It was built with 
 		
 ...and many other tricks & goodies :)
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/AdaptiveDisplay.gif "Adaptive Display")
 Adaptive Display
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/StartUp.gif "Live Tiles")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/AdaptiveDisplay.gif "Adaptive Display")
+		
 First Run
+		
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/StartUp.gif "Live Tiles")
 		
 The application consists of 3 projects:
 + **MyAlbum** - GUI Client (UWP application)
@@ -42,8 +44,6 @@ Delete Album
 		
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/DeleteAlbum.gif "Delete Album")
 #### 2. Edit album properties (name & "is main?")
-		
-Edit Album
 		
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/ChangeMainAlbum.gif "Edit Album")
 - Main album is displayed when the app starts and its name is displayed in bold in "Albums" menu.
@@ -82,13 +82,13 @@ Set Location
 #### 8. Toggle between Dark theme and Light theme
 		
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Theme.gif "Toggle Theme")
-#### 9. Move Back/Forward
+#### 9. Navigate using menu and Back/Forward buttons
 		
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/MoveBack.gif "Move Back")
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Navigation.gif "Navigation")
 
 ### Menu
 **Albums** - Navigation between albums or creation of a new one
-- **Main**
+- **Main Album**
 - Album X
 - Album Y
 		
