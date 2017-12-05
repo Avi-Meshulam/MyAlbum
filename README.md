@@ -1,5 +1,3 @@
-MyAlbum is an UWP MVVM app for viewing and organizing images. It was built with VS 2015 update 3.
-
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/FilePicker.gif "Pick Files")
 
 ### Featuers:
