@@ -1,0 +1,19 @@
+﻿<ContentDialog
+    x:Class="MyAlbum.ContentDialogs.MovePhotosContentDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyAlbum"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Move Photos"
+    PrimaryButtonText="OK"
+    PrimaryButtonClick="MovePhotosContentDialog_PrimaryButtonClick"
+    SecondaryButtonText="Cancel"
+    IsPrimaryButtonEnabled="False" 
+    Opened="MovePhotosContentDialog_Opened">
+    <StackPanel Margin="0,10,0,0">
+        <ComboBox x:Name="cboAlbums" ItemsSource="{x:Bind _albums}" DisplayMemberPath="Title" SelectedValuePath="Title"
+                  Header="Select target Album:" HorizontalAlignment="Stretch" SelectionChanged="cboAlbums_SelectionChanged"/>
+    </StackPanel>
+</ContentDialog>

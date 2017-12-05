@@ -1,0 +1,44 @@
+﻿<ContentDialog
+    x:Class="MyAlbum.ContentDialogs.CustomContentDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyAlbum.ContentDialogs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Opened="CustomContentDialog_Opened"
+    Title="TITLE">
+
+    <StackPanel Margin="0,10,0,0" MaxWidth="251">
+        <TextBlock Text="{Binding Content, Mode=OneWay}" Padding="0,0,0,25" TextWrapping="WrapWholeWords"/>
+        <Grid x:Name="ButtonsGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="4"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="4"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="PrimaryButton"
+                    Content="{x:Bind PrimaryButtonText, Mode=OneWay}"
+                    Command="{x:Bind PrimaryButtonCommand, Mode=OneWay}"
+                    CommandParameter="{x:Bind PrimaryButtonCommandParameter, Mode=OneWay}"
+                    Click="PrimaryButton_Click"
+                    HorizontalAlignment="Stretch"/>
+            <Button x:Name="SecondaryButton"
+                    Grid.Column="2"
+                    Content="{x:Bind SecondaryButtonText, Mode=OneWay}"
+                    Command="{x:Bind SecondaryButtonCommand, Mode=OneWay}"
+                    CommandParameter="{x:Bind SecondaryButtonCommandParameter, Mode=OneWay}"
+                    Click="SecondaryButton_Click"
+                    HorizontalAlignment="Stretch"/>
+            <Button x:Name="CancelButton"
+                    Grid.Column="4"
+                    Content="{x:Bind CancelButtonText, Mode=OneWay}" 
+                    Command="{x:Bind CancelButtonCommand, Mode=OneWay}"
+                    CommandParameter="{x:Bind CancelButtonCommandParameter, Mode=OneWay}"
+                    Click="CancelButton_Click"
+                    HorizontalAlignment="Stretch"/>
+        </Grid>
+    </StackPanel>
+</ContentDialog>
