@@ -121,3 +121,9 @@ Set Location
 ### Views
 + Main: Container for all other views. Hosts app title, menu, navigation buttons and theme button. The rest is a frame used as a placeholder for other views (currently only album).
 + Album: Displays photos in a grid or flip view. Contains the photos edit side panel, which can be pinned.
+
+### Storage Location
+- Root: %LOCALAPPDATA%\Packages\{GUID}\LocalState
+- Folders:
+	+ Albums
+	+ Photos
