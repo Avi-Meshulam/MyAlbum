@@ -1,3 +1,4 @@
+# MyAlbum
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/FilePicker.gif "Pick Files")
 
 ### Features/Technologies/Tools:
