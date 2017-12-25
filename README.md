@@ -32,7 +32,16 @@ The application consists of 3 projects:
 + **MyAlbum.BL** - Business logic layer (UWP class library)
 + **MyAlbum.DAL** - Data access layer (UWP class library)
 
-### Operations:
+#### UI Objects
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/UI-Diagram.png "UI Diagram")
+		
+BL Objects
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/BL-Diagram.png "BL Diagram")
+		
+DAL Objects
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/DAL-Diagram.png "DAL Diagram")
+		
+### Operations
 #### 1. Add/Delete album
 		
 Add Album
