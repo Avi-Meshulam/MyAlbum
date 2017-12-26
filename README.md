@@ -91,7 +91,7 @@ The application consists of 3 projects:
 **Capture** - Open camera app to take a picture and add it to current album
 		
 **Photo**
-- **Details** - Open photo details side panel (if not open already)
+- **Details** - Open photo details side panel (if not already open)
 - **Move To...** - Move selected photos to another album
 - **Delete** - Delete selected photos
 		
