@@ -23,22 +23,13 @@ The application consists of 3 projects:
 + **MyAlbum** - GUI Client (UWP application)
 + **MyAlbum.BL** - Business logic layer (UWP class library)
 + **MyAlbum.DAL** - Data access layer (UWP class library)
-		
-## UI Structure
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/UI-Diagram.png "UI Diagram")
-		
-## BL Structure
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/BL-Diagram.png "BL Diagram")
-		
-## DAL Structure
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/DAL-Diagram.png "DAL Diagram")
-		
+
 #### First Run
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/StartUp.gif "Live Tiles")
 
 #### Adaptive Display
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/AdaptiveDisplay.gif "Adaptive Display")
-		
+
 ## Operations
 ### 1. Add/Delete album
 		
@@ -112,6 +103,8 @@ The application consists of 3 projects:
 + Photo - Reflects a Photo as it exists in storage. Contains a collection of characters
 + Character - Reflects a character in photo (resembles a facebook tag, but simpler). Saved as path of its Photo container.
 
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/BL-Diagram.png "BL Diagram")
+
 ## View Models
 + ViewModelBase<T> - An abstract base class for Album & Photo ViewModels, where T is the model.
 + MainViewModel - Controlls Main view
@@ -119,12 +112,17 @@ The application consists of 3 projects:
 + PhotoViewModel - Represents and controlls a Photo model and contains a collection of CharacterViewModels
 + CharacterViewModel - Represents a Character model
 
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/UI-Diagram.png "UI Diagram")
+
 ## Views
 + Main: Container for all other views. Hosts app title, menu, navigation buttons and theme button. The rest is a frame used as a placeholder for other views (currently only album).
 + Album: Displays photos in a grid or flip view. Contains the photos edit side panel, which can be pinned.
 
-## Storage Location
-- Root: %LOCALAPPDATA%\Packages\{GUID}\LocalState
-- Folders:
-	+ Albums
-	+ Photos
+## DAL
+![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/DAL-Diagram.png "DAL Diagram")
+		
+#### Storage Location: 
+	%LOCALAPPDATA%\Packages\{GUID}\LocalState
+#### Folders (~tables):
++ Albums
++ Photos
