@@ -1,7 +1,7 @@
 # MyAlbum
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/FilePicker.gif "Pick Files")
 
-## Features/Technologies/Tools:
+## Features/Technologies/Tools
 + JSON Serialization - Auto save changes in Windows isolated storage.
 + MVVM - Implemented independently, without using any 3rd party library.
 + Binding - using the newer "x:bind".
