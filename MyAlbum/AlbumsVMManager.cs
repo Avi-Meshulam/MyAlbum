@@ -94,7 +94,7 @@ namespace MyAlbum
             var fileTypesFilter = new List<string>
             {
                 ".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff", ".jxr", ".ico" //, ".svg"
-                // *.svg files are supported in Windows 10, starting version from 1703
+                // *.svg files are supported in Windows 10, starting from version 1703
             };
 
             QueryOptions queryOptions = new QueryOptions(CommonFileQuery.OrderByName, fileTypesFilter);

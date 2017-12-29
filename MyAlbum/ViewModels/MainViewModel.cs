@@ -128,9 +128,7 @@ namespace MyAlbum.ViewModels
             UnsubscribeFromAlbumEvents(album);
             _albums.Remove(album);
 
-            if (_mainFrame.CanGoBack)
-                _mainFrame.GoBack();
-            else
+            if (!TryGoBack())
                 NavigateTo(MainAlbum);
         }
 
@@ -174,22 +172,26 @@ namespace MyAlbum.ViewModels
             SetMenu();
         }
 
-        public void GoBack()
+        public bool TryGoBack()
         {
             if (_mainFrame.CanGoBack)
             {
                 _mainFrame.GoBack();
                 SelectedAlbum = (_mainFrame.Content as AlbumPage).AlbumViewModel;
+                return true;
             }
+            return false;
         }
 
-        public void GoForward()
+        public bool TryGoForward()
         {
             if (_mainFrame.CanGoForward)
             {
                 _mainFrame.GoForward();
                 SelectedAlbum = (_mainFrame.Content as AlbumPage).AlbumViewModel;
+                return true;
             }
+            return false;
         }
         #endregion // UI Events Handlers
 
