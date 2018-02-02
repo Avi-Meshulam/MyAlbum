@@ -98,15 +98,15 @@ The application consists of 3 projects:
 **Exit**
 			
 ## Models
-+ Model<T> - An abstract base class for Album & Photo models.
++ Model&lt;T&gt; - An abstract base class for Album & Photo models.
 + Album - Reflects an Album as it exists in storage. Contains a collection of photos.
 + Photo - Reflects a Photo as it exists in storage. Contains a collection of characters
-+ Character - Reflects a character in photo (resembles a facebook tag, but simpler). Saved as path of its Photo container.
++ Character - Reflects a character in photo (resembles a facebook tag, but simpler). Saved as part of its Photo container.
 
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/BL-Diagram.png "BL Diagram")
 
 ## View Models
-+ ViewModelBase<T> - An abstract base class for Album & Photo ViewModels, where T is the model.
++ ViewModelBase`<T>` - An abstract base class for Album & Photo ViewModels, where T is the model.
 + MainViewModel - Controlls Main view
 + AlbumViewModel - Represents and controlls an Album model and contains a collection of PhotoViewModels
 + PhotoViewModel - Represents and controlls a Photo model and contains a collection of CharacterViewModels
