@@ -25,56 +25,56 @@ The application consists of 3 projects:
 + **MyAlbum.DAL** - Data access layer (UWP class library)
 
 #### First Run
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/StartUp.gif "Live Tiles")
+![Live Tiles](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/StartUp.gif "Live Tiles")
 
 #### Adaptive Display
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/AdaptiveDisplay.gif "Adaptive Display")
+![Adaptive Display](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/AdaptiveDisplay.gif "Adaptive Display")
 
 ## Operations
 ### 1. Add/Delete album
 		
 #### Add Album
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/NewAlbum.gif "New Album")
+![New Album](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/NewAlbum.gif "New Album")
 		
 #### Delete Album
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/DeleteAlbum.gif "Delete Album")
+![Delete Album](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/DeleteAlbum.gif "Delete Album")
 
 ### 2. Edit album properties (name & "is main?")
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/ChangeMainAlbum.gif "Edit Album")
+![Edit Album](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/ChangeMainAlbum.gif "Edit Album")
 - Main album is displayed when the app starts and its name is displayed in bold in "Albums" menu.
 - Current album is identified by a check mark in "Albums" menu.
 
 ### 3. Add/Delete photos (file picker, drag & drop, camera)
 #### Drag & Drop
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Drag&Drop.gif "Drag & Drop")
+![Drag & Drop](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Drag&Drop.gif "Drag & Drop")
 		
 #### Delete Photo
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/DeletePhoto.gif "Delete Photo")
+![Delete Photo](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/DeletePhoto.gif "Delete Photo")
 
 ### 4. Edit photo details in 2 places - directly in photo card or in side panel
 #### Edit Photo Details
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/EditPhotoDetails.gif "Edit Photo Details")
+![Edit Photo Details](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/EditPhotoDetails.gif "Edit Photo Details")
 		
 #### Data Validation
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Validation.gif "Validation")
+![Validation](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Validation.gif "Validation")
 		
 #### Set Location
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Location.gif "Set Location")
+![Set Location](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Location.gif "Set Location")
 
 ### 5. Move photos between albums
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/MovePhoto.gif "Move Photo")
+![Move Photo](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/MovePhoto.gif "Move Photo")
 
 ### 6. Add/Delete characters in photo
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/AddCharacter.gif "Add Character")
+![Add Character](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/AddCharacter.gif "Add Character")
 
 ### 7. Toggle between Grid view and Flip view
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/FlipView.gif "Toggle View")
+![Toggle View](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/FlipView.gif "Toggle View")
 
 ### 8. Toggle between Dark theme and Light theme
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Theme.gif "Toggle Theme")
+![Toggle Theme](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Theme.gif "Toggle Theme")
 
 ### 9. Navigate using menu and Back/Forward buttons
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Navigation.gif "Navigation")
+![Navigation](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/Navigation.gif "Navigation")
 
 ## Menu
 **Albums** - Navigation between albums or creation of a new one
@@ -103,23 +103,23 @@ The application consists of 3 projects:
 + Photo - Reflects a Photo as it exists in storage. Contains a collection of characters
 + Character - Reflects a character in photo (resembles a facebook tag, but simpler). Saved as part of its Photo container.
 
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/BL-Diagram.png "BL Diagram")
+![BL Diagram](https://github.com/PrisonerM13/MyAlbum/blob/master/images/BL-Diagram.png "BL Diagram")
 
 ## View Models
-+ ViewModelBase`<T>` - An abstract base class for Album & Photo ViewModels, where T is the model.
++ ViewModelBase&lt;T&gt; - An abstract base class for Album & Photo ViewModels, where T is the model.
 + MainViewModel - Controlls Main view
 + AlbumViewModel - Represents and controlls an Album model and contains a collection of PhotoViewModels
 + PhotoViewModel - Represents and controlls a Photo model and contains a collection of CharacterViewModels
 + CharacterViewModel - Represents a Character model
 
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/UI-Diagram.png "UI Diagram")
+![UI Diagram](https://github.com/PrisonerM13/MyAlbum/blob/master/images/UI-Diagram.png "UI Diagram")
 
 ## Views
 + Main: Container for all other views. Hosts app title, menu, navigation buttons and theme button. The rest is a frame used as a placeholder for other views (currently only album).
 + Album: Displays photos in a grid or flip view. Contains the photos edit side panel, which can be pinned.
 
 ## DAL
-![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/images/DAL-Diagram.png "DAL Diagram")
+![DAL Diagram](https://github.com/PrisonerM13/MyAlbum/blob/master/images/DAL-Diagram.png "DAL Diagram")
 		
 #### Storage Location: 
 	%LOCALAPPDATA%\Packages\{GUID}\LocalState
