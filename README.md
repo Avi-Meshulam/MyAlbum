@@ -1,5 +1,5 @@
 # MyAlbum
-### A UWP MVVM App for viewing and managing images, built with VS 2015 update 3.
+### A UWP MVVM App for viewing and managing albums and images, built with VS 2015 update 3.
 ![alt text](https://github.com/PrisonerM13/MyAlbum/blob/master/gif/FilePicker.gif "Pick Files")
 
 ## Features/Technologies/Tools
