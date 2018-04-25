@@ -491,7 +491,7 @@ namespace MyAlbum.ViewModels
                 catch (DuplicateObjectException)
                 {
                     await Utils.ShowContentDialog(
-                        "Add Album", "Name already exists. Please chose a different one.");
+                        "Add Album", "Name already exists. Please choose a different one.");
                     goto ShowNewAlbumDialog;
                 }
                 catch (Exception ex)
